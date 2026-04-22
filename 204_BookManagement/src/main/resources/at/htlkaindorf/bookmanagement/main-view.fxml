@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.htlkaindorf.bookmanagement.controller.MainController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+   <children>
+       <HBox alignment="CENTER" spacing="10.0">
+           <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </VBox.margin>
+          <children>
+              <ListView fx:id="lvAuthors" prefHeight="200.0" prefWidth="200.0" />
+              <ListView fx:id="lvBooks" prefHeight="200.0" prefWidth="200.0" />
+          </children>
+       </HBox>
+       <HBox alignment="CENTER" spacing="20.0">
+           <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </VBox.margin>
+          <children>
+              <Button fx:id="btOrderAuthorsBy" mnemonicParsing="false" text="ORDER AUTHORS BY" />
+              <Button fx:id="btAssign" mnemonicParsing="false" text="ASSIGN" />
+              <Button fx:id="btOrderBooksBy" mnemonicParsing="false" text="ORDER BOOKS BY " />
+          </children>
+       </HBox>
+       <ListView fx:id="lvBooksAndAuthors" prefHeight="200.0" prefWidth="200.0" />
+       <HBox alignment="CENTER" spacing="20.0">
+           <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </VBox.margin>
+          <children>
+              <Button fx:id="btClearAllMappings" mnemonicParsing="false" text="CLEAR ALL MAPPINGS" />
+              <Button fx:id="btExportMappings" mnemonicParsing="false" text="EXPORT MAPPINGS" />
+          </children>
+       </HBox>
+   </children>
+</VBox>

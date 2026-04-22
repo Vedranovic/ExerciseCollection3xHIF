@@ -1,0 +1,16 @@
+id,name,department,age,salary,skills
+1,Alice,IT,25,3200,Java|Spring|Git
+2,Bob,SALES,32,2800,Negotiation|CRM|Presentation
+3,Clara,IT,41,4500,Java|Docker|Linux
+4,David,HR,29,3000,Recruiting|Onboarding
+5,Eva,FINANCE,38,5200,Excel|Accounting|Budgeting
+6,Frank,IT,22,2500,Java|Git
+7,Grace,SALES,35,3100,CRM|Presentation
+8,Henry,IT,45,6000,Architecture|Java|Spring
+9,Iris,HR,33,3400,Recruiting|ConflictManagement
+10,Jon,FINANCE,27,3600,Accounting|SQL|Excel
+11,Kira,IT,30,4100,Kotlin|Android|Git
+12,Liam,SALES,24,2600,ColdCalls|CRM
+13,Mona,IT,28,3900,Java|Testing|CI
+14,Nora,FINANCE,44,6100,Risk|Budgeting|Excel
+15,Omar,HR,50,4700,LaborLaw|Mediation

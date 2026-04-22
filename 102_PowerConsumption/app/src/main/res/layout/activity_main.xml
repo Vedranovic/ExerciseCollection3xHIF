@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Power Consumption"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/id_tvUsedKwh"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tvTitle"
+        android:layout_marginTop="5dp"
+        android:text="Used kWh:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/id_tvDistanceInKm"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tvUsedKwh"
+        android:layout_marginTop="10dp"
+        android:text="Distance in km:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/id_etInputkWh"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tvTitle"
+        android:layout_toEndOf="@id/id_tvUsedKwh"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/id_etInputKm"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tvUsedKwh"
+        android:layout_toEndOf="@id/id_tvDistanceInKm"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/id_btCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tvDistanceInKm"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#7A7777"
+        android:text="CALCULATE"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp" />
+
+    <TextView
+        android:id="@+id/id_tvConsumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_btCalculate"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

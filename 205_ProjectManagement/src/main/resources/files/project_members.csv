@@ -1,0 +1,16 @@
+project_id,employee_id,role,allocation_percent
+P100,1,Backend Dev,40
+P100,3,DevOps,30
+P100,11,Mobile Dev,30
+P200,2,Sales Lead,50
+P200,7,Sales Ops,50
+P300,4,HR Specialist,50
+P300,9,HR Lead,50
+P400,5,Finance Lead,40
+P400,10,Data Analyst,30
+P400,14,Risk Officer,30
+P500,8,Architect,40
+P500,3,DevOps,30
+P500,13,QA,30
+P600,12,Sales Rep,60
+P600,2,Sales Lead,40

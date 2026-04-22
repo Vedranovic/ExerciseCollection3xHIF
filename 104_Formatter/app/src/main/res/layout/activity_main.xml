@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Text Formatter"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_edTextInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="start"
+        android:hint="Your text goes here!"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_tvTitle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/id_brHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="id_tvStyle,id_tvSize,textView6"
+        app:layout_constraintStart_toEndOf="@id/id_tvStyle" />
+
+    <TextView
+        android:id="@+id/id_tvStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Style:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/id_tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Size:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tvStyle"
+        app:layout_constraintTop_toBottomOf="@+id/id_tvStyle" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Font:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tvSize"
+        app:layout_constraintTop_toBottomOf="@+id/id_tvSize" />
+
+    <CheckBox
+        android:id="@+id/id_cbBold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:text="bold"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/id_tvStyle"
+        app:layout_constraintEnd_toStartOf="@+id/id_cbItalic"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/id_tvStyle"
+        app:layout_constraintStart_toStartOf="@id/id_brHorizontal"
+        app:layout_constraintTop_toTopOf="@+id/id_tvStyle" />
+
+    <CheckBox
+        android:id="@+id/id_cbItalic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="italic"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/id_cbBold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/id_cbBold"
+        app:layout_constraintTop_toTopOf="@+id/id_cbBold" />
+
+    <SeekBar
+        android:id="@+id/id_sbSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="32dp"
+        android:max="36"
+        android:min="12"
+        android:progress="20"
+        app:layout_constraintBottom_toBottomOf="@+id/id_tvSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/id_brHorizontal"
+        app:layout_constraintTop_toTopOf="@+id/id_tvSize" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/id_brHorizontal"
+        app:layout_constraintTop_toTopOf="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/id_rbUbuntu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Ubuntu" />
+
+        <RadioButton
+            android:id="@+id/id_rbGrandHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grand Hotel" />
+
+        <RadioButton
+            android:id="@+id/id_rbPermamentMarker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permament Marker" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

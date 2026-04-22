@@ -1,0 +1,7 @@
+project_id,name,department,budget
+P100,CampusApp,IT,120000
+P200,SalesDashboard,SALES,65000
+P300,Recruitment2026,HR,30000
+P400,YearEndClosing,FINANCE,90000
+P500,CloudMigration,IT,200000
+P600,CustomerRetention,SALES,80000
