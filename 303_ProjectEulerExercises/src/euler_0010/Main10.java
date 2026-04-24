@@ -11,14 +11,13 @@ public class Main10 {
         ExecutorService executor = Executors.newFixedThreadPool(NUM_TREADS);
         CompletionService<Integer> cs = new ExecutorCompletionService<>(executor);
         int start = START_VALUE;
-        int end = END_VALUE / NUM_TREADS + END_VALUE % NUM_TREADS;
-        int chunkSize = END_VALUE / NUM_TREADS;
+        int end;
         int sum = 0;
 
         for (int i = 0; i < NUM_TREADS; i++) {
+            end = i == NUM_TREADS - 1 ? END_VALUE : start + END_VALUE / NUM_TREADS - 1;
             cs.submit(new EulerTask10(start, end));
             start = end + 1;
-            end += chunkSize;
         }
 
         for (int i = 0; i < NUM_TREADS; i++) {

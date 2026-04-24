@@ -15,14 +15,6 @@ public class Main {
         producer2.start();
         producer3.start();
 
-        producer1.join();
-        producer2.join();
-        producer3.join();
-
-        rawContentBuffer.put(Post.poisonPill());
-        rawContentBuffer.put(Post.poisonPill());
-        rawContentBuffer.put(Post.poisonPill());
-
         filter.join();
         moderator.join();
 

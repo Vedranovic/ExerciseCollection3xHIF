@@ -14,10 +14,20 @@ public class ActionConsumer implements Runnable {
 
     @Override
     public void run() {
+        BufferItem raw;
 
+        while ((raw = queue.take()) != null) {
+            execute((ActionCommand) raw);
+
+            try {
+                Thread.sleep(random.nextInt(300, 801));
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     private void execute(ActionCommand command) {
-
+        System.out.println(actorName + " executes data " + ++processed + ": " + command.getMessage());
     }
 }

@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class Moderator implements Runnable {
-    private ReviewBuffer reviewBuffer;
+    private final ReviewBuffer reviewBuffer;
     private int approved = 0;
     private int rejected = 0;
     private final Random random;
@@ -13,20 +13,19 @@ public class Moderator implements Runnable {
 
     @Override
     public void run() {
-        boolean isValid = true;
+        Post post = null;
 
-        while (isValid) {
-            Post post = reviewBuffer.take();
+        do {
+            post = reviewBuffer.take();
 
             if (post.isPoisonPill()) {
-                isValid = false;
-            } else {
-                moderate(post);
+                printReport();
+                System.out.println("MODERATOR is shutting down.");
+                continue;
             }
-        }
 
-        System.out.println("MODERATOR is shutting down.");
-        printReport();
+            moderate(post);
+        } while (!post.isPoisonPill());
     }
 
     private void moderate(Post post) {
@@ -50,5 +49,6 @@ public class Moderator implements Runnable {
                 === Moderation Statistics ===
                 Approved: %d
                 Rejected: %d""", approved, rejected);
+        System.out.println();
     }
 }

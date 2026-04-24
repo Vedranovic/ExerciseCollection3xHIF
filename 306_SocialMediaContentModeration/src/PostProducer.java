@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class PostProducer implements Runnable {
-    private RawContentBuffer rawBuffer;
+    private final RawContentBuffer rawBuffer;
     private static int nextId = 1;
     private final int postCount;
     private final String producerName;
@@ -35,6 +35,7 @@ public class PostProducer implements Runnable {
                     false));
         }
 
+        rawBuffer.put(Post.poisonPill());
         System.out.println(Thread.currentThread().getName() + "has produced all posts.");
     }
 

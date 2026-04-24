@@ -11,24 +11,32 @@ public class EulerTask10 implements Callable<Integer> {
     }
 
     @Override
-    public Integer call() throws Exception {
+    public Integer call() {
         int sum = 0;
 
         for (int i = start; i <= end; i++) {
-            boolean isPrime = false;
-
-            for (int j = 2; j < i; j++) {
-                if (i % j != 0) {
-                    isPrime = true;
-                    break;
-                }
-            }
-
-            if (isPrime) {
+            if (isPrime(i)) {
                 sum += i;
             }
         }
 
         return sum;
+    }
+
+    private boolean isPrime(int number) {
+        boolean isPrime = true;
+
+        if (number < 2) {
+            return false;
+        }
+
+        for (int i = 2; i * i < number; i++) {
+            if (number % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        return isPrime;
     }
 }

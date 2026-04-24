@@ -12,16 +12,13 @@ public class Main1 {
         CompletionService<Integer> cs = new ExecutorCompletionService<>(executor);
         int sum = 0;
         int start = START_VALUE;
-        int end = END_VALUE / NUM_THREADS + END_VALUE % NUM_THREADS;
-        int chunkSize = END_VALUE / NUM_THREADS;
+        int end;
 
         for (int i = 0; i < NUM_THREADS; i++) {
-//            end = i == NUM_THREADS ? END_VALUE :
-//                    start + END_VALUE / NUM_THREADS - 1;
+            end = i == NUM_THREADS - 1 ? END_VALUE : start + END_VALUE / NUM_THREADS - 1;
             cs.submit(new EulerTask1(start, end));
 //            System.out.format("[%d, %d]\n", start, end);
             start = end + 1;
-            end += chunkSize;
         }
 
         for (int i = 0; i < NUM_THREADS; i++) {

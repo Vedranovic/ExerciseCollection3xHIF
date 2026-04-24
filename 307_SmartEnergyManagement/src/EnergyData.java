@@ -14,8 +14,29 @@ public class EnergyData extends BufferItem {
     }
 
     public double surplus() {
+        return pvPower - houseLoad;
+    }
 
+    @Override
+    public String toString() {
+        return "EnergyData{" +
+                "id=" + id +
+                ", pvPower=" + pvPower +
+                ", houseLoad=" + houseLoad +
+                ", batterySoc=" + batterySoc +
+                ", carConnected=" + carConnected +
+                '}';
+    }
 
-        return 0;
+    public int getId() {
+        return id;
+    }
+
+    public int getBatterySoc() {
+        return batterySoc;
+    }
+
+    public boolean isCarConnected() {
+        return carConnected;
     }
 }

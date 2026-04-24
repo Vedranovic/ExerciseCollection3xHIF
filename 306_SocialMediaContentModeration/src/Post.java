@@ -16,16 +16,22 @@ public class Post {
     }
 
     public static Post poisonPill() {
-        return new Post(15, "Revan", "Das Wort das Marc halt immer sagt", 100, true);
+        return new Post(-1, "Revan", "Das Wort das Marc halt immer sagt", -1, true);
     }
 
     public boolean needsManualReview() {
         return toxicScore >= 60;
     }
 
+    @Override
     public String toString() {
-        return String.format(Locale.GERMAN, "Post{id=%d, username=%s, toxicScore=%d, text=%s}",
-                id, userName, toxicScore, text);
+        return "Post{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", text='" + text + '\'' +
+                ", toxicScore=" + toxicScore +
+                ", poisonPill=" + poisonPill +
+                '}';
     }
 
     public int getId() {

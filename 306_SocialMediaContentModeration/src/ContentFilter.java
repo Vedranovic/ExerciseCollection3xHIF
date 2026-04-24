@@ -1,6 +1,6 @@
 public class ContentFilter implements Runnable {
-    private RawContentBuffer rawBuffer;
-    private ReviewBuffer reviewBuffer;
+    private final RawContentBuffer rawBuffer;
+    private final ReviewBuffer reviewBuffer;
     private final int producerCount;
     private int poisonPillsSeen = 0;
     private int autoApproved = 0;
@@ -14,25 +14,22 @@ public class ContentFilter implements Runnable {
 
     @Override
     public void run() {
-        boolean isValid = true;
-
-        while (isValid) {
+        while (poisonPillsSeen != producerCount) {
             Post post = rawBuffer.take();
 
             if (post.isPoisonPill()) {
                 poisonPillsSeen++;
-                isValid = false;
-            } else {
-                process(post);
+
+                if (poisonPillsSeen == producerCount) {
+                    System.out.println("FILTER is shutting down and send termination signal to moderation");
+                    reviewBuffer.put(Post.poisonPill());
+                    printReport();
+                }
+                continue;
             }
 
-            if (poisonPillsSeen == producerCount) {
-                System.out.println("FILTER is shutting down and send termination signal to moderation");
-                reviewBuffer.put(Post.poisonPill());
-            }
+            process(post);
         }
-
-        printReport();
     }
 
     private void process(Post post) {

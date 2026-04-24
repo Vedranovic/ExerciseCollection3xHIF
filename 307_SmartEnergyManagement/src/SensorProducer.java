@@ -14,6 +14,26 @@ public class SensorProducer implements Runnable {
 
     @Override
     public void run() {
+        for (int i = 0; i < count; i++) {
+            dataBuffer.put(new EnergyData(
+                    nextId(),
+                    random.nextInt(26),
+                    random.nextInt(2, 13),
+                    random.nextInt(20, 101),
+                    random.nextBoolean()));
 
+            try {
+                Thread.sleep(random.nextInt(300, 701));
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        dataBuffer.close();
+        System.out.println("SensorProducer done and DataQueue closed.");
+    }
+
+    private synchronized static int nextId() {
+        return nextId++;
     }
 }
