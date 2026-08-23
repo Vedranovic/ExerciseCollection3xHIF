@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="acd738d2-9efa-45f4-9d8c-36bc295c54b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/config/AppProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/config/DatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/exceptions/DatabaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/model/ProductOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/repository/ProductOrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/service/ProductOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/java/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../401_Shopping/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/FileAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/config/AppProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/config/DatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/controller/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/controller/DataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/exceptions/DatabaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/models/Club.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/models/ClubPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/models/ClubTrainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/models/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/models/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/models/Trainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/repository/ClubPlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/repository/ClubRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/repository/ClubTrainerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/repository/MatchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/repository/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/repository/TrainerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/service/ClubPlayerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/service/ClubService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/service/ClubTrainerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/service/MatchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/service/PlayerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/htlkaindorf/_03_managementsystem/service/TrainerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/htlkaindorf/_03_managementsystem/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/htlkaindorf/_03_managementsystem/main-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/files/clubs.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/files/matches.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/files/players.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/files/trainers.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../103_PocketCalculator/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../103_PocketCalculator/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../306_SocialMediaContentModeration/src/ContentFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../306_SocialMediaContentModeration/src/ContentFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../306_SocialMediaContentModeration/src/Moderator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../306_SocialMediaContentModeration/src/Moderator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FJGl8rxy0r39FzXOylaeRiDEe2" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Data.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FileAccess.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FileIO.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Launcher.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\HTL Kaindorf\3BHIF\Programmieren und Software Engineering\Exa\403_ManagementSystem\src\main\resources\files" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Launcher">
+    <configuration name="Data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.htlkaindorf._03_managementsystem.Data" />
+      <module name="403_ManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.htlkaindorf._03_managementsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileAccess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.htlkaindorf._03_managementsystem.FileAccess" />
+      <module name="403_ManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.htlkaindorf._03_managementsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.htlkaindorf._03_managementsystem.Launcher" />
+      <module name="403_ManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.htlkaindorf._03_managementsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Launcher" />
+        <item itemvalue="Application.FileAccess" />
+        <item itemvalue="Application.Data" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="acd738d2-9efa-45f4-9d8c-36bc295c54b2" name="Changes" comment="" />
+      <created>1781859284218</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781859284218</updated>
+      <workItem from="1781859288770" duration="2332000" />
+      <workItem from="1782237321586" duration="5398000" />
+      <workItem from="1782389104086" duration="2166000" />
+      <workItem from="1782411305800" duration="5194000" />
+      <workItem from="1782459777628" duration="4194000" />
+      <workItem from="1782758630544" duration="662000" />
+      <workItem from="1782759393976" duration="1896000" />
+      <workItem from="1783021572892" duration="3375000" />
+      <workItem from="1785783027657" duration="514000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

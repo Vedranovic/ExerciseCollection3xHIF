@@ -45,6 +45,7 @@ public class Moderator implements Runnable {
     }
 
     private void printReport() {
+        System.out.println();
         System.out.format("""
                 === Moderation Statistics ===
                 Approved: %d

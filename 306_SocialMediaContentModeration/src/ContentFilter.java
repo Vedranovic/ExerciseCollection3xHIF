@@ -46,6 +46,7 @@ public class ContentFilter implements Runnable {
     }
 
     private void printReport() {
+        System.out.println();
         System.out.format("""
                 === Filter Statistics ===
                 Automatically approved: %d

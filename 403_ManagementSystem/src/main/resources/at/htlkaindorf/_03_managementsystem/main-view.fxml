@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="600.0" prefWidth="950.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.htlkaindorf._03_managementsystem.controller.AppController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="400.0">
+         <children>
+            <ListView fx:id="lvClubs" prefHeight="450.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ListView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="500.0" spacing="50.0">
+               <children>
+                  <Button fx:id="btAddClub" mnemonicParsing="false" text="ADD">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btDeleteClub" mnemonicParsing="false" text="DELETE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btChangeClub" mnemonicParsing="false" text="CHANGE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TextField fx:id="tfClub" promptText="Club">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox spacing="15.0">
+         <children>
+            <TabPane prefHeight="500.0" prefWidth="580.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Player">
+                     <content>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="lvPlayers" prefHeight="460.0" prefWidth="320.0">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </ListView>
+                              <VBox alignment="CENTER" prefHeight="460.0" prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <Button fx:id="btAddPlayer" mnemonicParsing="false" text="ADD">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btDeletePlayer" mnemonicParsing="false" text="DELETE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btChangePlayer" mnemonicParsing="false" text="CHANGE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                </Tab>
+                <Tab text="Trainer">
+                     <content>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="lvTrainers" prefHeight="460.0" prefWidth="320.0">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </HBox.margin></ListView>
+                              <VBox alignment="CENTER" prefHeight="460.0" prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <Button fx:id="btAddTrainer" mnemonicParsing="false" text="ADD">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btDeleteTrainer" mnemonicParsing="false" text="DELETE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btChangeTrainer" mnemonicParsing="false" text="CHANGE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tbMatch" text="Matches">
+                     <content>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="lvMatches" prefHeight="460.0" prefWidth="320.0">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </HBox.margin></ListView>
+                              <VBox alignment="CENTER" prefHeight="460.0" prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <Button fx:id="btAddMatch" mnemonicParsing="false" text="ADD">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btDeleteMatch" mnemonicParsing="false" text="DELETE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btChangeMatch" mnemonicParsing="false" text="CHANGE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                  </Tab>
+              </tabs>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TabPane>
+            <TextField fx:id="tfFirstField" promptText="Firstname" />
+            <TextField fx:id="tfSecondField" promptText="Lastname" />
+            <TextField fx:id="tfThirdField" promptText="Age" />
+         </children>
+         <HBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
