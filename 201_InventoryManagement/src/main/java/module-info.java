@@ -1,10 +1,8 @@
-module at.htlkaindorf.exa_201_inventorymanagement {
+module at.htlkaindorf._01_inventorymanagement {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens at.htlkaindorf.exa_201_inventorymanagement to javafx.fxml;
-    exports at.htlkaindorf.exa_201_inventorymanagement;
-    exports at.htlkaindorf.exa_201_inventorymanagement.controller;
-    opens at.htlkaindorf.exa_201_inventorymanagement.controller to javafx.fxml;
+    opens at.htlkaindorf._01_inventorymanagement.controller to javafx.fxml;
+    exports at.htlkaindorf._01_inventorymanagement;
 }
