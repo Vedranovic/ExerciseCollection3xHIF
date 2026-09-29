@@ -1,6 +1,8 @@
 package pojos;
 
-import enums.Category;
+import Enum.Category;
+
+import java.util.Locale;
 
 public class Product {
     private Category category;
@@ -21,8 +23,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("#%02d %-15s %-10s %9.2f € stock=%3d bio=%s",
-                id, name, category, price, stock, organic ? "Y" : "N");
+        return String.format(Locale.GERMAN, "#%02d %-8s %15s %10.2f € stock=%3d bio=%s", id, name, category, price, stock, organic ? 'Y' : 'N');
     }
 
     public Category getCategory() {

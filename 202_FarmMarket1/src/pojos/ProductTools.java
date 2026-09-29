@@ -1,28 +1,28 @@
 package pojos;
 
+import Interface.ProductRule;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductTools {
     public static List<Product> filter(List<Product> source, ProductRule rule) {
-        List<Product> filteredProducts = new ArrayList<>();
+        List<Product> filteredList = new ArrayList<>();
 
         for (Product product : source) {
             if (rule.test(product)) {
-                filteredProducts.add(product);
+                filteredList.add(product);
             }
         }
 
-        System.out.format("Result (%d):", filteredProducts.size());
-        System.out.println();
-
-        return filteredProducts;
+        return filteredList;
     }
 
     public static void printAll(List<Product> list) {
         for (Product product : list) {
             System.out.println(product);
         }
+
         System.out.println();
     }
 }

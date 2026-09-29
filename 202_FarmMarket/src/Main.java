@@ -1,6 +1,5 @@
+import enums.Category;
 import pojos.Product;
-
-import Enum.Category;
 import pojos.ProductTools;
 import pojos.RandomData;
 
@@ -10,42 +9,27 @@ public class Main {
     private static List<Product> products;
     private static Scanner scanner;
 
-    public static void main(String[] args) {
+    public static void main() {
         products = new ArrayList<>();
         scanner = new Scanner(System.in);
         int choice = 1;
 
         while (choice != 0) {
-            System.out.println("""
-                    === FarmMarket ===
-                    1) Generate Random Products
-                    2) Show All Products
-                    3) Filtering
-                    4) Sorting
-                    0) End
-                    """);
-
+            System.out.println("=== FarmMarket ===");
+            System.out.println("1) Generate Random Products");
+            System.out.println("2) Show All Products");
+            System.out.println("3) Filtering");
+            System.out.println("4) Sorting");
+            System.out.println("0) End");
+            System.out.println();
             System.out.print("Selection: ");
             choice = scanner.nextInt();
 
             switch (choice) {
-                case 1:
-                    Main.generate();
-                    break;
-                case 2:
-                    Main.showAll();
-                    break;
-                case 3:
-                    Main.filter();
-                    break;
-                case 4:
-                    Main.sort();
-                    break;
-                case 0:
-                    break;
-                default:
-                    System.out.println("Enter a valid number!");
-                    break;
+                case 1 -> generate();
+                case 2 -> showAll();
+                case 3 -> filter();
+                case 4 -> sort();
             }
         }
     }
@@ -55,7 +39,7 @@ public class Main {
         int count = scanner.nextInt();
 
         products = RandomData.randomProducts(count);
-        System.out.println("OK- generated!");
+        System.out.println("OK - generated!");
         System.out.println();
     }
 
@@ -63,147 +47,118 @@ public class Main {
         if (products.isEmpty()) {
             System.out.println("No products!");
             System.out.println();
-            return;
+        } else {
+            ProductTools.printAll(products);
         }
-
-        System.out.println("Result (" + products.size() + "):");
-        ProductTools.printAll(products);
     }
 
     public static void filter() {
-        boolean toFilter = true;
+        if (products.isEmpty()) {
+            System.out.println("Please generate some products first!");
+            System.out.println();
+        } else {
+            char choice = 'a';
 
-        while (toFilter) {
-            if (!products.isEmpty()) {
-                System.out.println("""
-                    === FILTER ===
-                    A) Organic Products
-                    B) Price >= X
-                    C) Stock <= Y
-                    D) Category = ...
-                    E) Name contains text (case-insensitive)
-                    F) Price between MIN and MAX
-                    """);
-
+            while (!(choice >= 'A' && choice <= 'F')) {
+                System.out.println("--- FILTER ---");
+                System.out.println("A) Organic products");
+                System.out.println("B) Price >= X");
+                System.out.println("C) Stock <= Y");
+                System.out.println("D) Category = ...");
+                System.out.println("E) Name contains text (case-insensitive)");
+                System.out.println("F) Price between MIN and MAX");
                 System.out.print("Selection (A-F): ");
-                char choice = scanner.next().charAt(0);
+                choice = scanner.next().charAt(0);
+                System.out.println();
 
                 switch (choice) {
-                    case 'A':
-                        List<Product> organicList = ProductTools.filter(products, Product::isOrganic);
-                        System.out.println("Result (" + organicList.size() + "):");
-                        ProductTools.printAll(organicList);
-                        toFilter = false;
-                        break;
-                    case 'B':
+                    case 'A' -> ProductTools.printAll(ProductTools.filter(products,
+                            product -> product.isOrganic()));
+                    case 'B' -> {
                         int x = Main.readInt("X: ");
-                        List<Product> xList = ProductTools.filter(products, product -> product.getPrice() >= x);
-                        System.out.println("Result (" + xList.size() + "):");
-                        ProductTools.printAll(xList);
-                        toFilter = false;
-                        break;
-                    case 'C':
+                        ProductTools.printAll(ProductTools.filter(products,
+                                product -> product.getPrice() >= x));
+                    }
+                    case 'C' -> {
                         int y = Main.readInt("Y: ");
-                        List<Product> yList = ProductTools.filter(products, product -> product.getStock() <= y);
-                        System.out.println("Result (" + yList.size() + "):");
-                        ProductTools.printAll(yList);
-                        toFilter = false;
-                        break;
-                    case 'D':
-                        Category category = readCategory();
-                        List<Product> filteredCategoryList = ProductTools.filter(products, product -> product.getCategory().equals(category));
-                        System.out.println("Result (" + filteredCategoryList.size() + "):");
-                        ProductTools.printAll(filteredCategoryList);
-                        toFilter = false;
-                        break;
-                    case 'E':
-                        String text = readString("Text: ");
-                        List<Product> containsTextList = ProductTools.filter(products, product -> product.getName().toLowerCase().contains(text.toLowerCase()));
-                        System.out.println("Result (" + containsTextList.size() + "):");
-                        ProductTools.printAll(containsTextList);
-                        toFilter = false;
-                        break;
-                    case 'F':
-                        double min = readDouble("MIN: ");
-                        double max = readDouble("MAX: ");
-                        List<Product> minMaxList = ProductTools.filter(products, product -> product.getPrice() > min && product.getPrice() < max);
-                        System.out.println("Result (" + minMaxList.size() + "):");
-                        ProductTools.printAll(minMaxList);
-                        toFilter = false;
-                        break;
-                    default:
-                        toFilter = false;
-                        break;
+                        ProductTools.printAll(
+                                ProductTools.filter(products,
+                                        product -> product.getStock() <= y)
+                        );
+                    }
+                    case 'D' -> {
+                        Category category = Main.readCategory("Category: ");
+                        ProductTools.printAll(
+                            ProductTools.filter(products,
+                                    product -> product.getCategory().equals(category))
+                    );
+                    }
+                    case 'E' -> {
+                        String text = Main.readString("Text: ").toLowerCase();
+                        ProductTools.printAll(
+                            ProductTools.filter(products,
+                                    product -> product.getName().toLowerCase().contains(text)
+                            )
+                    );
+                    }
+                    case 'F' -> {
+                        double min = Main.readDouble("MIN: ");
+                        double max = Main.readDouble("MAX: ");
+                        ProductTools.printAll(
+                            ProductTools.filter(products,
+                                    product -> product.getPrice() >= min
+                                            && product.getPrice() <= max)
+                        );
+                    }
                 }
-            } else {
-                System.out.println("Please generate some products first!");
-                System.out.println();
-                toFilter = false;
             }
         }
     }
 
     public static void sort() {
-        boolean toSort = true;
+        if (products.isEmpty()) {
+            System.out.println("Please generate some products first!");
+            System.out.println();
+        } else {
+            char choice = 'a';
 
-        while (toSort) {
-            if (!products.isEmpty()) {
-                System.out.println("""
-                    === SORT ===
-                    A) by price ascending
-                    B) by price descending
-                    C) by stock descending
-                    D) by name (case.insensitive)
-                    E) by category, then by name
-                    F) bio first, then price ascending
-                    """);
-
+            while (!(choice >= 'A' && choice <= 'F')) {
+                System.out.println("--- SORT ---");
+                System.out.println("A) by price ascending");
+                System.out.println("B) by price descending");
+                System.out.println("C) by stock ascending");
+                System.out.println("D) by name (case-insensitive)");
+                System.out.println("E) by category, then by name");
+                System.out.println("F) bio first, then price ascending");
                 System.out.print("Selection (A-F): ");
-                char choice = scanner.next().charAt(0);
-                System.out.println("Result:");
-
-                List<Product> sortedList = new ArrayList<>(products);
+                choice = scanner.next().charAt(0);
+                System.out.println();
 
                 switch (choice) {
-                    case 'A':
-                        sortedList.sort((o1, o2) -> (int) (o1.getPrice() - o2.getPrice()));
-                        ProductTools.printAll(sortedList);
-                        toSort = false;
-                        break;
-                    case 'B':
-                        sortedList.sort((o1, o2) -> (int) (o2.getPrice() - o1.getPrice()));
-                        ProductTools.printAll(sortedList);
-                        toSort = false;
-                        break;
-                    case 'C':
-                        sortedList.sort((o1, o2) -> (o2.getStock() - o1.getStock()));
-                        ProductTools.printAll(sortedList);
-                        toSort = false;
-                        break;
-                    case 'D':
-                        sortedList.sort(Comparator.comparing(Product::getName));
-                        ProductTools.printAll(sortedList);
-                        toSort = false;
-                        break;
-                    case 'E':
-                        sortedList.sort(Comparator.comparing((Product o) -> o.getCategory().name()).thenComparing(Product::getName));
-                        ProductTools.printAll(sortedList);
-                        toSort = false;
-                        break;
-                    case 'F':
-                        sortedList.sort(Comparator.comparing(Product::isOrganic).reversed().thenComparing(Product::getPrice));
-                        ProductTools.printAll(sortedList);
-                        toSort = false;
-                        break;
-                    default:
-                        toSort = false;
-                        break;
+                    case 'A' -> products.sort((o1, o2) -> Double.compare(o1.getPrice(), o2.getPrice()));
+                    case 'B' -> products.sort(((o1, o2) -> Double.compare(o2.getPrice(), o1.getPrice())));
+                    case 'C' -> products.sort(((o1, o2) -> o1.getStock() - o2.getStock()));
+                    case 'D' -> products.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
+                    case 'E' -> products.sort((o1, o2) -> {
+                        if (o1.getCategory().equals(o2.getCategory())) {
+                            return o1.getName().compareTo(o2.getName());
+                        }
+
+                        return o1.getCategory().compareTo(o2.getCategory());
+                    });
+                    case 'F' -> products.sort((o1, o2) -> {
+                        int compare = Boolean.compare(o2.isOrganic(), o1.isOrganic());
+
+                        if (compare != 0) {
+                            return compare;
+                        }
+
+                        return Double.compare(o1.getPrice(), o2.getPrice());
+                    });
                 }
-            } else {
-                System.out.println("Please generate some products first!");
-                System.out.println();
-                toSort = false;
             }
+
+            ProductTools.printAll(products);
         }
     }
 
@@ -225,17 +180,16 @@ public class Main {
         return scanner.nextDouble();
     }
 
-    public static Category readCategory() {
-        String input;
+    public static Category readCategory(String prompt) {
+        System.out.println("Categories: " + Arrays.toString(Category.values()));
 
         while (true) {
-            try {
-                System.out.println("Categories: " + Arrays.toString(Category.values()));
-                System.out.print("Category: ");
-                input = scanner.next().toUpperCase();
+            System.out.print(prompt);
+            String category = scanner.next().toUpperCase();
 
-                return Category.valueOf(input);
-            } catch (IllegalArgumentException iae) {
+            try {
+                return Category.valueOf(category);
+            } catch (IllegalArgumentException e) {
                 System.out.println("Invalid.");
             }
         }
