@@ -121,6 +121,7 @@ public class Main {
             System.out.println();
         } else {
             char choice = 'a';
+            List<Product> sortedList = new ArrayList<>(products);
 
             while (!(choice >= 'A' && choice <= 'F')) {
                 System.out.println("--- SORT ---");
@@ -135,18 +136,18 @@ public class Main {
                 System.out.println();
 
                 switch (choice) {
-                    case 'A' -> products.sort((o1, o2) -> Double.compare(o1.getPrice(), o2.getPrice()));
-                    case 'B' -> products.sort(((o1, o2) -> Double.compare(o2.getPrice(), o1.getPrice())));
-                    case 'C' -> products.sort(((o1, o2) -> o1.getStock() - o2.getStock()));
-                    case 'D' -> products.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
-                    case 'E' -> products.sort((o1, o2) -> {
+                    case 'A' -> sortedList.sort((o1, o2) -> Double.compare(o1.getPrice(), o2.getPrice()));
+                    case 'B' -> sortedList.sort(((o1, o2) -> Double.compare(o2.getPrice(), o1.getPrice())));
+                    case 'C' -> sortedList.sort(((o1, o2) -> o1.getStock() - o2.getStock()));
+                    case 'D' -> sortedList.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
+                    case 'E' -> sortedList.sort((o1, o2) -> {
                         if (o1.getCategory().equals(o2.getCategory())) {
                             return o1.getName().compareTo(o2.getName());
                         }
 
                         return o1.getCategory().compareTo(o2.getCategory());
                     });
-                    case 'F' -> products.sort((o1, o2) -> {
+                    case 'F' -> sortedList.sort((o1, o2) -> {
                         int compare = Boolean.compare(o2.isOrganic(), o1.isOrganic());
 
                         if (compare != 0) {
@@ -158,7 +159,7 @@ public class Main {
                 }
             }
 
-            ProductTools.printAll(products);
+            ProductTools.printAll(sortedList);
         }
     }
 

@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09a53aa4-9acf-44a3-ac50-5b458868b880" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/enums/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pojos/ProductRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../201_InventoryManagement/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/src/main/java/at/htlkaindorf/exa_201_inventorymanagement/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/src/main/java/at/htlkaindorf/exa_201_inventorymanagement/controller/AppController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/src/main/java/at/htlkaindorf/exa_201_inventorymanagement/controller/DataController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/src/main/java/at/htlkaindorf/exa_201_inventorymanagement/interfaces/SortBy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/src/main/java/at/htlkaindorf/exa_201_inventorymanagement/pojos/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/src/main/java/at/htlkaindorf/exa_201_inventorymanagement/pojos/Type.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../201_InventoryManagement1/src/main/resources/at/htlkaindorf/exa_201_inventorymanagement/main-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enum/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/ProductRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pojos/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojos/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pojos/ProductTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojos/ProductTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pojos/RandomData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojos/RandomData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "Application.Product.executor": "Run",
     "Application.RandomData.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -120,5 +92,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
