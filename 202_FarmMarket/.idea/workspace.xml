@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09a53aa4-9acf-44a3-ac50-5b458868b880" name="Changes" comment="Exa_202 done" />
+    <list default="true" id="09a53aa4-9acf-44a3-ac50-5b458868b880" name="Changes" comment="Exa_202 done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/202_FarmMarket.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/Enum/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/Interface/ProductRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/pojos/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/pojos/ProductTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/pojos/RandomData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../203_SetExperiment/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/203_SetExperiment.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/interfaces/SetMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/pojos/HashSetImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/pojos/LinkedHashSetImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/pojos/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/pojos/TreeSetImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/resources/students.csv" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +47,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Vedranovic&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Vedranovic/ExerciseCollection3xHIF.git&quot;,
+    &quot;accountId&quot;: &quot;7ad64ca9-aeae-4d3c-b7d2-8259da70972b&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1,
   &quot;fromUser&quot;: false
@@ -32,29 +70,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Product.executor": "Run",
-    "Application.RandomData.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Product.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RandomData.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />

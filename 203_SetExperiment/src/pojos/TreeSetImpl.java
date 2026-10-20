@@ -1,37 +1,17 @@
 package pojos;
 
-import interfaces.SetMethods;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.TreeSet;
 
-public class TreeSetImpl implements SetMethods {
-    private TreeSet<Student> studentSet;
-
-    public TreeSetImpl() {
-        studentSet = new TreeSet<>();
-    }
-
+public class TreeSetImpl extends SetMethods {
     @Override
-    public void printSet() {
-        for (Student student : studentSet) {
-            System.out.println(student);
+    public String collectSetData() {
+        TreeSet<Student> treeSet = new TreeSet<>(getStudentSet());
+        StringBuilder output = new StringBuilder();
+
+        for (Student student : treeSet) {
+            output.append(student).append("\n");
         }
-    }
 
-    @Override
-    public List<Student> sort() {
-        return new ArrayList<>(studentSet);
-    }
-
-    @Override
-    public void insert(List<Student> students) {
-        studentSet.addAll(students);
-    }
-
-    @Override
-    public int getSize() {
-        return studentSet.size();
+        return output.toString();
     }
 }

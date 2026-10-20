@@ -1,8 +1,6 @@
 package pojos;
 
-import java.util.Locale;
-
-public class Student implements Comparable<Student> {
+public class Student {
     private String firstName;
     private String lastName;
     private String email;
@@ -15,6 +13,11 @@ public class Student implements Comparable<Student> {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%-10s, %-10s (%-10s) - %10d", lastName, firstName, email, age);
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -23,23 +26,11 @@ public class Student implements Comparable<Student> {
         return lastName;
     }
 
-    @Override
-    public String toString() {
-        return String.format(Locale.GERMAN, "%15s, %15s (%30s) - %7d", lastName.toUpperCase(), firstName, email, age);
+    public String getEmail() {
+        return email;
     }
 
-    public static void main(String[] args) {
-        Student student = new Student("Vedran", "Popic", "vedran.popic27@gmail.com", 18);
-
-        System.out.println(student);
-    }
-
-    @Override
-    public int compareTo(Student o) {
-        if (this.lastName.equals(o.lastName)) {
-            return this.firstName.compareTo(o.firstName);
-        }
-
-        return this.lastName.compareTo(o.firstName);
+    public int getAge() {
+        return age;
     }
 }
