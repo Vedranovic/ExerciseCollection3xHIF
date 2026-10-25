@@ -1,6 +1,4 @@
-import pojos.HashSetImpl;
-import pojos.SetMethods;
-import pojos.Student;
+import pojos.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -25,12 +23,73 @@ public class Main {
             System.out.println();
             System.out.print("Selection: ");
             choice = scanner.nextInt();
+            System.out.println("--------------------------------");
 
             switch (choice) {
                 case 1 -> {
+                    long start = System.nanoTime();
                     SetMethods methods = new HashSetImpl();
+
                     methods.insert(students);
+
+                    System.out.println("ELEMENTS AFTER INSERT: " + methods.getSize());
+                    System.out.println();
+                    System.out.println("DATA AFTER INSERT");
                     System.out.println(methods.collectSetData());
+                    System.out.println();
+                    System.out.println("DATA AFTER SORT");
+
+                    students = methods.sort();
+
+                    printStudents(students);
+                    System.out.println();
+
+                    long end = System.nanoTime();
+                    long complete = end - start;
+                    System.out.println("NEEDED TIME: " + complete + " ns");
+                }
+                case 2 -> {
+                    long start = System.nanoTime();
+                    SetMethods methods = new TreeSetImpl();
+                    methods.insert(students);
+
+                    System.out.println("ELEMENTS AFTER INSERT: " + methods.getSize());
+                    System.out.println();
+                    System.out.println("DATA AFTER INSERT");
+                    System.out.println(methods.collectSetData());
+                    System.out.println();
+                    System.out.println("DATA AFTER SORT");
+
+                    students = methods.sort();
+
+                    printStudents(students);
+                    System.out.println();
+
+                    long end = System.nanoTime();
+                    long complete = end - start;
+                    System.out.println("NEEDED TIME: " + complete + " ns");
+                }
+                case 3 -> {
+                    long start = System.nanoTime();
+                    SetMethods methods = new LinkedHashSetImpl();
+
+                    methods.insert(students);
+
+                    System.out.println("ELEMENTS AFTER INSERT: " + methods.getSize());
+                    System.out.println();
+                    System.out.println("DATA AFTER INSERT");
+                    System.out.println(methods.collectSetData());
+                    System.out.println();
+                    System.out.println("DATA AFTER SORT");
+
+                    students = methods.sort();
+
+                    printStudents(students);
+                    System.out.println();
+
+                    long end = System.nanoTime();
+                    long complete = end - start;
+                    System.out.println("NEEDED TIME: " + complete + " ns");
                 }
             }
         }

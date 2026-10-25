@@ -11,21 +11,11 @@ public abstract class SetMethods {
 
     public abstract String collectSetData();
 
-    public List<Student> sort() {
-        List<Student> students = new ArrayList<>(studentSet);
+    public abstract List<Student> sort();
 
-        students.sort(Comparator.comparing(Student::getLastName).thenComparing(Student::getFirstName));
+    public abstract void insert(List<Student> students);
 
-        return students;
-    }
-
-    public void insert(List<Student> students) {
-
-    }
-
-    public int getSize() {
-        return studentSet.size();
-    }
+    public abstract int getSize();
 
     public Set<Student> getStudentSet() {
         return studentSet;
