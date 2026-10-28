@@ -5,31 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09a53aa4-9acf-44a3-ac50-5b458868b880" name="Changes" comment="Exa_202 done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/202_FarmMarket.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/Enum/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/Interface/ProductRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/pojos/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/pojos/ProductTools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../202_FarmMarket1/src/pojos/RandomData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../203_SetExperiment/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/203_SetExperiment.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/interfaces/SetMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/pojos/HashSetImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/pojos/LinkedHashSetImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/pojos/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/pojos/TreeSetImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/src/resources/students.csv" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/_04_bookmanagement/controller/DataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/_04_bookmanagement/pojos/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/_04_bookmanagement/pojos/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/_04_bookmanagement/pojos/FileIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/_04_bookmanagement/pojos/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/_04_bookmanagement/pojos/SortBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement/src/main/resources/files/demo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../204_BookManagement1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../203_SetExperiment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../203_SetExperiment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../204_BookManagement/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../204_BookManagement/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/bookmanagement/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/bookmanagement/controller/DataController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/bookmanagement/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/bookmanagement/enums/Genre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/bookmanagement/interfaces/SortBy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/bookmanagement/pojos/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/bookmanagement/pojos/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/at/htlkaindorf/bookmanagement/pojos/FileIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../204_BookManagement/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../204_BookManagement/src/main/resources/at/htlkaindorf/bookmanagement/main-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

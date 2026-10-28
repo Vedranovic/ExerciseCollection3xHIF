@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>at.htlkaindorf</groupId>
-    <artifactId>BookManagement</artifactId>
+    <artifactId>204_BookManagement</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>204_BookManagement</name>
 
@@ -47,8 +47,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>23</source>
-                    <target>23</target>
+                    <source>14</source>
+                    <target>14</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -60,7 +60,8 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>at.htlkaindorf.bookmanagement/at.htlkaindorf.bookmanagement.Application
+                            <mainClass>
+                                at.htlkaindorf._04_bookmanagement/at.htlkaindorf._04_bookmanagement.Application
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

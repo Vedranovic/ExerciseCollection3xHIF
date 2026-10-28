@@ -1,4 +1,4 @@
-package at.htlkaindorf.bookmanagement.enums;
+package at.htlkaindorf._04_bookmanagement.pojos;
 
 public enum Genre {
     DYSTOPIAN,

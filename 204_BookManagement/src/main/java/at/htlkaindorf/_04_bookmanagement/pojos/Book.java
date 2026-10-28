@@ -1,8 +1,5 @@
-package at.htlkaindorf.bookmanagement.pojos;
+package at.htlkaindorf._04_bookmanagement.pojos;
 
-import at.htlkaindorf.bookmanagement.enums.Genre;
-
-import java.util.Locale;
 import java.util.Objects;
 
 public class Book implements Comparable<Book> {
@@ -18,6 +15,28 @@ public class Book implements Comparable<Book> {
         this.title = title;
         this.year = year;
         this.pages = pages;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return isbn == book.isbn;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(isbn);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s (%d) - %s; %d pages in %d", title, isbn, genre, pages, year);
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        return this.title.compareTo(o.title);
     }
 
     public Genre getGenre() {
@@ -38,28 +57,5 @@ public class Book implements Comparable<Book> {
 
     public int getPages() {
         return pages;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
-        return isbn == book.isbn;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(isbn);
-    }
-
-    @Override
-    public String toString() {
-        return String.format(Locale.GERMAN, "%s (%d) - %s; %d pages in %d",
-                title, isbn, genre.name(), pages, year);
-    }
-
-    @Override
-    public int compareTo(Book o) {
-        return this.title.compareTo(o.title);
     }
 }

@@ -1,6 +1,5 @@
-package at.htlkaindorf.bookmanagement.pojos;
+package at.htlkaindorf._04_bookmanagement.pojos;
 
-import java.util.Locale;
 import java.util.Objects;
 
 public class Author implements Comparable<Author> {
@@ -14,22 +13,6 @@ public class Author implements Comparable<Author> {
         this.lastName = lastName;
         this.country = country;
         this.birthYear = birthYear;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public int getBirthYear() {
-        return birthYear;
     }
 
     @Override
@@ -46,8 +29,7 @@ public class Author implements Comparable<Author> {
 
     @Override
     public String toString() {
-        return String.format(Locale.GERMAN, "%s %s, %d in %s",
-                lastName.toUpperCase(), firstName, birthYear, country);
+        return String.format("%s %s, %d in %s", lastName, firstName, birthYear, country);
     }
 
     @Override
@@ -57,5 +39,21 @@ public class Author implements Comparable<Author> {
         }
 
         return this.lastName.compareTo(o.lastName);
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
     }
 }
